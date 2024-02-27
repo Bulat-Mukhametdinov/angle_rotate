@@ -19,4 +19,4 @@ pip install -r pip-requirements
 ```
 
 ## Work example
-![](https://github.com/Bulat-Mukhametdinov/angle_rotate/example.gif)
+![](https://github.com/Bulat-Mukhametdinov/angle_rotate/blob/main/example.gif)
