@@ -1,5 +1,5 @@
 import cv2 as cv
-from constants import *
+from src.constants import *
 import math
 
 def draw_arrow(window, angle: float):
