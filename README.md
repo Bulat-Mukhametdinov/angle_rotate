@@ -1,22 +1,18 @@
-## Finding coordinates
-Let's assume that we have learned to somehow find the coordinates of interest in order to further determine the angle of rotation. Now you can use the program's graphical interface to determine the required coordinates.
+# Bolt Rotation Angle Detector
 
-## Entering coordinates
-1. Launch the program.
-2. Use the GUI to mark the coordinates of interest in the image.
-3. Use the "REDO" button to clear all coordinates. When entering coordinates is complete, use the "DONE" button.
+This project determines the angle of rotation of bolts by analyzing images.
 
-## Visualization of the algorithm's operation
-After entering the coordinates, the left image will begin to rotate, simulating different angles. Among other things, the screen will display the angle by which you want to rotate the left picture, and the right will show the picture after rotation.
+## Installation
 
-## Rotation control
-The "FLIP" button allows you to change the direction of rotation, while the "STOP" button stops the rotation. Press 'q' to stop the programm
+1. Run `./init.bat` to install the required dependencies.
+2. Download the YOLO weights from [Google Drive](https://drive.google.com/drive/folders/13xgcezmCsH3BguBzeVez_sCkcvsUSOxx?usp=sharing) and clone them to the `yolo/` folder.
 
-## Running the program
-To run the main program `main.py` you need to run the following command in the terminal:
-```bash
-pip install -r pip-requirements
-```
+## Usage
 
-## Work example
-![](https://github.com/Bulat-Mukhametdinov/angle_rotate/blob/main/example.gif)
+1. Place your images in the `data/` folder.
+2. Run the program using the command `python main.py`.
+3. Use the "next" and "prev" buttons to navigate through the images.
+4. Click the "choose" button to select the image you want to analyze.
+5. The program will run the YOLO keypoints detection model to find the bolt on the image.
+6. If the keypoints are found correctly, the program will determine the rotation angle.
+7. If the keypoints cannot be found, the program will print the message "impossible to determine angle" on the window.
